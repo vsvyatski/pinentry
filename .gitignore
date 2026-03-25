@@ -48,6 +48,7 @@ secmem/*.a
 w32/Makefile.in
 w32/Makefile
 w32/*.exe
+w32/RC*09060
 tty/Makefile.in
 tty/Makefile
 /qt/pinentryconfirm.moc
