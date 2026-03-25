@@ -12,6 +12,7 @@
  */
 
 #define IDD_PINENT                      101
+#define IDI_MAIN_ICON					102
 #define IDC_PINENT_TEXT                 292
 #define IDC_PINENT_DESC                 1000
 #define IDC_PINENT_ERR                  1001
