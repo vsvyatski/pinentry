@@ -389,7 +389,7 @@ dlg_proc (HWND dlg, UINT msg, WPARAM wparam, LPARAM lparam)
           /* Display the error prompt in red.  */
           SetTextColor ((HDC)wparam, RGB (255, 0, 0));
           SetBkMode ((HDC)wparam, TRANSPARENT);
-          return (BOOL)GetStockObject (NULL_BRUSH);
+          return (BOOL)(GetStockObject(NULL_BRUSH) != NULL);
         }
       break;
 
