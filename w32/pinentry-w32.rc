@@ -21,17 +21,17 @@
 #include <windows.h>
 #include "resource.h"
 
-IDB_ICON_32    BITMAP   DISCARDABLE   "logo-32.bmp"
-IDB_ICON_48    BITMAP   DISCARDABLE   "logo-48.bmp"
-IDB_ICON_64    BITMAP   DISCARDABLE   "logo-64.bmp"
-IDB_ICON_96    BITMAP   DISCARDABLE   "logo-96.bmp"
-IDB_ICON_128   BITMAP   DISCARDABLE   "logo-128.bmp"
+IDB_ICON_32     BITMAP  DISCARDABLE "logo-32.bmp"
+IDB_ICON_48     BITMAP  DISCARDABLE "logo-48.bmp"
+IDB_ICON_64     BITMAP  DISCARDABLE "logo-64.bmp"
+IDB_ICON_96     BITMAP  DISCARDABLE "logo-96.bmp"
+IDB_ICON_128    BITMAP  DISCARDABLE "logo-128.bmp"
 
 // application icon (TODO, create icon)
-IDI_MAIN_ICON           ICON          "res/pinentry.ico"
+IDI_MAIN_ICON   ICON    "res/pinentry.ico"
 
 // application manifest
-1 RT_MANIFEST "pinentry-w32.exe.manifest"
+1   RT_MANIFEST "res/pinentry-w32.exe.manifest"
 
 // main dialog
 IDD_PINENT DIALOGEX 0, 0, 220, 116
