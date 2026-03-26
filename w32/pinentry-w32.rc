@@ -17,9 +17,9 @@
  */
 
 #include <config.h>
-#include <winuser.h>
 #include <windows.h>
 #include "resource.h"
+#include "version.h"
 
 IDB_ICON_32     BITMAP  DISCARDABLE "logo-32.bmp"
 IDB_ICON_48     BITMAP  DISCARDABLE "logo-48.bmp"
@@ -31,7 +31,7 @@ IDB_ICON_128    BITMAP  DISCARDABLE "logo-128.bmp"
 IDI_MAIN_ICON   ICON    "res/pinentry.ico"
 
 // application manifest
-1   RT_MANIFEST "res/pinentry-w32.exe.manifest"
+1   RT_MANIFEST "res/app.manifest"
 
 // main dialog
 IDD_PINENT DIALOGEX 0, 0, 220, 116
@@ -47,3 +47,7 @@ BEGIN
     DEFPUSHBUTTON   "O&K", IDOK, 107, 96, 50, 14
     PUSHBUTTON      "&Cancel", IDCANCEL, 164, 96, 50, 14
 END
+
+#ifndef APSTUDIO_INVOKED
+#include "res/pinentry-w32.rc2"  // non-Microsoft Visual C++ edited resources
+#endif  // not APSTUDIO_INVOKED
