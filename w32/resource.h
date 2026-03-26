@@ -18,6 +18,7 @@
 #define IDC_PINENT_ERR                  1001
 #define IDC_PINENT_PROMPT               1002
 #define IDC_PINENT_ICON                 1003
+#define IDB_DIALOG_LOGO					1004
 
 #define IDB_ICON_32                     3101
 #define IDB_ICON_48                     3102

@@ -30,23 +30,51 @@ IDB_ICON_128    BITMAP  DISCARDABLE "logo-128.bmp"
 // application icon (TODO, create icon)
 IDI_MAIN_ICON   ICON    "res/pinentry.ico"
 
+// bitmaps
+IDB_DIALOG_LOGO BITMAP  "res/dialogLogo.bmp"
+
 // application manifest
 1   RT_MANIFEST "res/app.manifest"
 
 // main dialog
-IDD_PINENT DIALOGEX 0, 0, 220, 116
-STYLE DS_SETFONT|DS_MODALFRAME|WS_EX_TOPMOST|WS_POPUP|WS_CAPTION|WS_SYSMENU
+IDD_PINENT DIALOGEX 0, 0, 240, 94
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Pinentry"
 FONT 9, "Microsoft Sans Serif", 400, 0, 0xCC
 BEGIN
-    CONTROL         "", IDC_PINENT_ICON, "Static", SS_BITMAP|SS_CENTERIMAGE, 4, 6, 32, 32
-    LTEXT           "", IDC_PINENT_DESC, 40, 6, 174, 50
-    RTEXT           "", IDC_PINENT_PROMPT, 6, 60, 60, 12
-    EDITTEXT        IDC_PINENT_TEXT, 74, 59, 140, 12, ES_PASSWORD|ES_AUTOHSCROLL
-    CTEXT           "", IDC_PINENT_ERR, 40, 76, 174, 12
-    DEFPUSHBUTTON   "O&K", IDOK, 107, 96, 50, 14
-    PUSHBUTTON      "&Cancel", IDCANCEL, 164, 96, 50, 14
+    CONTROL         IDB_DIALOG_LOGO, IDC_PINENT_ICON, "Static", SS_BITMAP | SS_CENTERIMAGE, 4, 4, 32, 49
+    LTEXT           "", IDC_PINENT_DESC, 39, 4, 197, 29
+    LTEXT           "", IDC_PINENT_PROMPT, 39, 37, 42, 12
+    EDITTEXT        IDC_PINENT_TEXT, 83, 37, 153, 12, ES_PASSWORD | ES_AUTOHSCROLL
+    CTEXT           "", IDC_PINENT_ERR, 4, 53, 232, 12
+    DEFPUSHBUTTON   "O&K", IDOK, 126, 76, 54, 14
+    PUSHBUTTON      "&Cancel", IDCANCEL, 182, 76, 54, 14
 END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PINENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 236
+        VERTGUIDE, 36
+        VERTGUIDE, 39
+        VERTGUIDE, 81
+        VERTGUIDE, 83
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 90
+        HORZGUIDE, 33
+        HORZGUIDE, 37
+        HORZGUIDE, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
 
 #ifndef APSTUDIO_INVOKED
 #include "res/pinentry-w32.rc2"  // non-Microsoft Visual C++ edited resources
