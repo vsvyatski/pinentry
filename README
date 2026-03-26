@@ -19,6 +19,8 @@ Enlightenment	--enable-pinentry-efl	 EFL (>= 1.18)
 FLTK		--enable-pinentry-fltk	 Fast Light Toolkit (>= 1.3)
 Curses		--enable-pinentry-curses Curses library, for example ncurses
 TTY		--enable-pinentry-tty	 Simple TTY version, no dependencies
+Win32	--disable-pinentry-emacs --disable-doc    Classic Win32 version,
+					 built with MSYS2 (UCRT64 is preferred)
 
 The GTK+, GNOME, and Qt pinentries can fall back to curses mode.  The
 option to enable this is --enable-fallback-curses, but this is also
