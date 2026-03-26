@@ -19,7 +19,7 @@
 
 ## Process this file with automake to produce Makefile.in
 
-logos = logo-32.bmp logo-48.bmp logo-64.bmp logo-96.bmp logo-128.bmp
+logos = res/dialogLogo.bmp
 
 EXTRA_DIST = $(logos)
 

@@ -19,9 +19,3 @@
 #define IDC_PINENT_PROMPT               1002
 #define IDC_PINENT_ICON                 1003
 #define IDB_DIALOG_LOGO					1004
-
-#define IDB_ICON_32                     3101
-#define IDB_ICON_48                     3102
-#define IDB_ICON_64                     3103
-#define IDB_ICON_96                     3104
-#define IDB_ICON_128                    3105
